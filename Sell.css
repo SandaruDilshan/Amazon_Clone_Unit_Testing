@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+body{
+    background-color:white ;
+}
+.outerdiv{
+    background-color: white;
+}
+.firstdiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-right: 60px;
+    margin-left: 60px;  
+}
+.firstdiv h3{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 23px;
+    color: #1a232e;
+}
+.firstdiv span{
+    color: #1a232e;
+    font-size: 15px;
+    font-weight: 800;
+}
+.firstdiv p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.firstdiv input{
+    background-color: rgb(255, 145, 0);
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.bac_image{
+    position: absolute;
+    z-index: 99;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100px;
+}
+.leftrightdiv{
+    display: flex;
+    z-index: 100;
+    position: absolute;
+    justify-content: space-between;
+}
+.img1 img{ 
+    border-radius: 5px;
+    position: absolute;
+    width:30%;
+    margin-top: 10px;
+    margin-left: 18%;
+    z-index: 119;
+}
+.img2 img{
+    border-radius: 5px;
+    position: absolute;
+    width:30%;
+    height: 70%;
+    margin-top: 200px;
+    margin-left: 10%;
+    z-index:120;
+}
+.img3 img{
+    
+    border-radius: 50px;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 0%;
+}
+.rightdiv{
+    margin-left: 50px;
+}
+.leftdiv{
+    margin-left: 30px;
+}
+.leftdiv h1{
+    
+    font-size: 80px;
+    color: #1a232e;
+}
+.leftdiv p{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.leftdiv input{
+    background-color: rgb(255, 145, 0);
+    border: none;
+    width: 170px;
+    height: 70px;
+    border-radius: 40px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 45px;
+}
+/* sellor signup */
+.logo_a{
+    display: flex;
+    justify-content: center;
+}
+.logo_a h1{
+    margin-top: 20px;
+}
+footer{
+    margin-top: 960px;
+}

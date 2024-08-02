@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- Account list and order -->
+    <div class="traingle " id="trainglem"></div>
+    <div class="hdn-sign "  id="hdn-signm">
+
+      <div class="signin">
+        <a href="sign_in.html"><input type="button" name="submit" value="Sign in" src="sign_in.html"></a>
+        <p>New customer? <a href="sign_up.html">Start here.</a></p>
+        <hr>
+      </div>
+      
+      <div class="hdn-table"> 
+        <div>
+          <h3>Your List</h3>
+          <ul>
+              <li>Create List</li>
+              <li>Find a list & Registry</li>
+              <li>Amazon Smile Charity Lists</li>
+          </ul>
+        </div> 
+        <div class="line"></div>
+          <div class="hdn-line">
+               <h3>Your Account</h3>
+               <ul>
+                   <li>Aaccount</li>
+                   <li>Orders</li>
+                   <li>Recommendations</li>
+                   <li>Browsing History</li>
+                   <li>Watch List</li>
+                   <li>Vedio Purchases</li>
+                   <li>Kindle Unlimited</li>
+                   <li>Content & Devices</li>
+                   <li>Subscribe & Save Items</li>
+                   <li>Menbership</li>
+                   <li>Music Library</li>
+               </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side bar to the secondary navidgation bar -->
+    
+          <div class="sidebar" id="sideid">
+            
+            <div class="hdn-head">
+            <h2>Hello, Sign in</h2>
+            </div>
+            <div class="hdn-content">
+            <h3>Products</h3>
+            <ul>
+                <div class="listitem">
+                  <a href="Products/products.php?catagory=Electronics"><li>Electronics</li></a>
+                  <i class="fa-solid fa-greater-than"></i>
+                 </div>
+                <div class="listitem">
+                    <a href="Products/products.php?catagory=Computers"><li>Computers</li></a>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <div class="listitem">
+                  <a href="Products/products.php?catagory=Smart_Home"><li>Smart Home</li></a>
+                  <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <div class="listitem">
+                  <a href="Products/products.php?catagory=Women_Fashion"><li>Women's Fashion</li></a>
+                  <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <div class="listitem">
+                  <a href="Products/products.php?catagory=Men_Fation"><li>Men's Fation</li></a>
+                  <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <div class="listitem">
+                  <a href="Products/products.php?catagory=Girl_Fasion"><li>Girl's Fasion</li></a>
+                  <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <div class="listitem">
+                  <a href="Products/products.php?catagory=Boy_Fashon"><li>Boy's Fashon</li></a>
+                  <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <div class="listitem">
+                  <a href="Products/products.php?catagory=Baby"><li>Baby</li></a>
+                  <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <div class="listitem">
+                  <a href="Products/products.php?catagory=Toys"><li>Toys</li></a>
+                  <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <hr style="color: rgb(73, 70, 70)" />
+            </ul>
+            </div>
+
+            <div class="hdn-content">
+            <h3>Help & Settings</h3>
+            <ul>
+                <div class="listitem">
+                  <li>Your Account</li>
+                </div>
+                <div class="listitem">
+                  <li>Coustomer Service</li>
+                </div>
+                <div class="listitem">
+                   <li><a href="/sign_in.html">Sign in</a></li>
+                </div>
+                <hr style="color: rgb(73, 70, 70)" />
+            </ul>
+            </div>
+            
+          </div>   
+
+          <div class="close-icon " id="xmark">
+            <i class="fa-solid fa-xmark"  onclick="CloseSidebar()"></i>
+          </div>
+          <div id="black" class="on-scroll"></div>
+
+
+    
+    
+    <!-- Navigation bar -->
+    <nav>
+      <a href="/"><img src="assets/amazon_logo.png" width="100" alt="" /></a>
+      <div class="nav-country">
+        <img src=".assets/location_icon.png" height="20" alt="" />
+        <div>
+          <p>Deliver to</p>
+          <h1>United State</h1>
+        </div>
+      </div>
+
+      <div class="nav-search"  >
+        <div class="nav-search-catogary">
+          <p>All</p>
+          <img src="assets/dropdown_icon.png" height="12" alt="" />
+        </div>
+        <input
+          type="text"
+          class="nav-search-input"
+          placeholder="Search Amozon"
+        />
+        <img src="assets/search_icon.png" class="nav-search-icon" alt="" />
+      </div>
+
+      <div class="nav-language">
+        <p>EN</p>
+        <img src="assets/us_flag.png" width="25px" alt="" />
+        <img src="assets/dropdown_icon.png" width="8px" alt="" />
+      </div>
+
+      <div class="nav-text" id="sign_acc">
+        <p>Hello, Sign In</p>
+        <h1>
+          Account & List
+          <img src="assets/dropdown_icon.png" width="8px" alt="" />
+        </h1>
+      </div>
+      <div class="nav-text">
+        <p>Return</p>
+        <h1>$ Orders</h1>
+      </div>
+
+      <a href="Cart.php" class="nav-cart">
+        <img src="assets/cart_icon.png" width="35px" alt="" />
+        <h4>Cart</h4>
+      </a>
+    </nav>
+    <!-- Second nav bar -->
+    <div class="nav-bottom">
+      <div class="all-item" onclick="Opensidebar() " >
+        <img src="assets/menu_icon.png" width="25px" alt="" />
+        <p>All</p>
+      </div>
+      <p>Today's Details</p>
+      <p>Customer Service</p>
+      <p>Registry</p>
+      <p>Gift Cards</p>
+      <p><a href="Sell.html">Sell</a></p>
+    </div>
+
+    <!-- Background img -->
+    <div class="header-slider">
+      <a href="#" class="control-prev">&#129144;</a>
+      <a href="#" class="control-next">&#129146;</a>
+      <ul>
+        <img src="assets/header1.png" class="header-img" alt="" />
+        <img src="assets/header2.jpg" class="header-img" alt="" />
+        <img src="assets/header3.jpg" class="header-img" alt="" />
+        <img src="assets/header4.jpg" class="header-img" alt="" />
+        <img src="assets/header5.jpg" class="header-img" alt="" />
+        <img src="assets/header6.jpg" class="header-img" alt="" />
+      </ul>
+    </div>
+    
+    <!-- First item box raw -->
+    <div class="box-raw header-box">
+      <div class="box-col">
+        <h3>Smart Home</h3>
+        <img src="assets/box1-1.png" alt="" />
+        <a href="Products/products.php?catagory=Smart_Home"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Lunar New Year</h3>
+        <img src="assets/box1-2.jpg" alt="" />
+        <a href="Products/products.php?catagory=Lunar_New_Year"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Toy Under</h3>
+        <img src="assets/box1-3.jpg" alt="" />
+        <a href="Products/products.php?catagory=Toy_Under"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Electronics</h3>
+        <img src="assets/box1-4.jpg" alt="" />
+        <a href="Products/products.php?catagory=Electronics"><input type="submit" value="Shop more" ></a>
+      </div>
+    </div>
+    <div class="box-raw">
+      <div class="box-col">
+        <h3>Grooming Products</h3>
+        <img src="assets/box2-1.jpg" alt="" />
+        <a href="Products/products.php?catagory=Grooming_Products"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Latest Devices</h3>
+        <img src="assets/box2-2.jpg" alt="" />
+        <a href="Products/products.php?catagory=Latest_Devices"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Pets Food</h3>
+        <img src="assets/box2-3.jpg" alt="" />
+        <a href="Products/products.php?catagory=Pets_Food"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Deals in PCs</h3>
+        <img src="assets/box2-4.jpg" alt="" />
+        <a href="Products/products.php?catagory=Deals_in_PCs"><input type="submit" value="Shop more" ></a>
+      </div>
+    </div>
+    <!-- Scroll item set -->
+    <div class="product-slider">
+      <h2>Best sellors in Sports & Outdoors</h2>
+      <div class="products">
+        <img src="assets/product1-1.jpg" alt="" />
+        <img src="assets/product1-2.jpg" alt="" />
+        <img src="assets/product1-3.jpg" alt="" />
+        <img src="assets/product1-4.jpg" alt="" />
+        <img src="assets/product1-5.jpg" alt="" />
+        <img src="assets/product1-6.jpg" alt="" />
+        <img src="assets/product1-7.jpg" alt="" />
+        <img src="assets/product1-8.jpg" alt="" />
+        <img src="assets/product1-9.jpg" alt="" />
+        <img src="assets/product1-10.jpg" alt="" />
+      </div>
+    </div>
+    <!-- Second item box raw -->
+    <div class="box-raw">
+      <div class="box-col">
+        <h3>Stationary</h3>
+        <img src="assets/box3-1.jpg" alt="" />
+        <a href="Products/products.php?catagory=Stationary"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Laptop for Study</h3>
+        <img src="assets/box3-2.jpg" alt="" />
+        <a href="Products/products.php?catagory=Laptop_for_Study"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Office Chairs</h3>
+        <img src="assets/box3-3.jpg" alt="" />
+        <a href="Products/products.php?catagory=Office_Chairs"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Computers</h3>
+        <img src="assets/box3-4.jpg" alt="" />
+        <a href="Products/products.php?catagory=Computers"><input type="submit" value="Shop more" ></a>
+      </div>
+    </div>
+    <!--  -->
+    <div class="product-slider-with-price">
+      <h1>Deals Under $25</h1>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-1.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-2.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-3.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-4.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-5.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-6.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-7.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-8.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-9.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-10.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="assets/product2-11.jpg" alt="" />
+          </div>
+          <div class="product-offer">
+            <p>27% off</p>
+            <span>Deal</span>
+          </div>
+          <p class="product-price">$ <span>14.49</span> List price:$19.95</p>
+          <h4>This product is the best for you</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll item set 2-->
+    <div class="product-slider">
+      <h2>Best sellors in Sports & Outdoors</h2>
+      <div class="products">
+        <img src="assets/product1-1.jpg" alt="" />
+        <img src="assets/product1-2.jpg" alt="" />
+        <img src="assets/product1-3.jpg" alt="" />
+        <img src="assets/product1-4.jpg" alt="" />
+        <img src="assets/product1-5.jpg" alt="" />
+        <img src="assets/product1-6.jpg" alt="" />
+        <img src="assets/product1-7.jpg" alt="" />
+        <img src="assets/product1-8.jpg" alt="" />
+        <img src="assets/product1-9.jpg" alt="" />
+        <img src="assets/product1-10.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Second item box raw -->
+    <div class="box-raw">
+      <div class="box-col">
+        <h3>Women's Fashion</h3>
+        <img src="assets/Womens fashion.jpg" alt="" />
+        <a href="Products/products.php?catagory=Women_Fashion"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Men's Fashion</h3>
+        <img src="assets/Mens fashion.jpg" alt="" />
+        <a href="Products/products.php?catagory=Men_Fashion"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Baby Fashion</h3>
+        <img src="assets/Baby fashion.jpg" alt="" />
+        <a href="Products/products.php?catagory=Baby_Fashion"><input type="submit" value="Shop more" ></a>
+      </div>
+      <div class="box-col">
+        <h3>Towel</h3>
+        <img src="assets/Towels.jpg" alt="" />
+        <a href="Products/products.php?catagory=Towel"><input type="submit" value="Shop more" ></a>
+      </div>
+    </div>
+    
+    <footer>
+      <img src="assets/amazon_logo.png" width="100" alt="" />
+      <p>&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/eb9a09f072.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

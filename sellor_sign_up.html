@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Sell.css">
+</head>
+<body>
+<div class="form">
+    <div class="logo_a">
+        <div> <img class="image" src="assets/Amazon_black_logo-removebg-preview.png" width="170" alt=""></div>
+        <div><h1>seller central</h1></div>
+        
+    </div>
+ 
+  <div class="container">
+
+    <h1>Create account</h1>
+    <form action="sellor_sign_up.php" method="post">
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="Name" placeholder="First and last name">
+      <label for="phone_or_email">Email</label>
+      <input type="email" id="email" name="Email" placeholder="Enter your email">
+      <label for="name">Address</label>
+      <input type="text" id="address" name="Address" placeholder="Enter your address">
+      <label for="country">Country</label>
+      <select name="Country" id="country">
+        <option value="">Select your country</option>
+        <option value="sl">Sri Lanka</option>
+        <option value="us">United State</option>
+        <option value="uk">United Kindom</option>
+      </select>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="Password" placeholder="At least 6 characters">
+      <label for="password_confirmation">Re-enter password</label>
+      <input type="password" id="password_confirmation" name="Password_confirmation" placeholder="Re-enter your password">
+      <button type="submit" name="submit" class="btn">Continue</button>
+    </form>
+
+    <p>By creating an account, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+    <p>Buying for work? <a href="#">Create a free business account</a></p>
+    <p>Already have an account? <a href="sellor_sign_in.html">Sign in</a></p>
+  </div>
+</div>
+</body>
+</html>
